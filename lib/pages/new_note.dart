@@ -14,13 +14,13 @@ class NewNote extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(
-                    left: 25.0, top: 15.0, bottom: 20.0, right: 25.0),
+                    left: 25.0, top: 15.0, bottom: 20.0, right: 16.0),
                 child: Hero(
                   tag: "NewNoteTag",
                   child: Container(
                     decoration: BoxDecoration(
                       color: Color(0xffffd3e9),
-                      borderRadius: new BorderRadius.circular(20.0),
+                      borderRadius: new BorderRadius.circular(19.0),
                       boxShadow: [
                         new BoxShadow(
                           color: Color(0xffffd3e9).withOpacity(0.4),
@@ -30,10 +30,10 @@ class NewNote extends StatelessWidget {
                       ],
                     ),
                     constraints: BoxConstraints(
-                        maxHeight: 65.0,
-                        maxWidth: 85.0,
-                        minWidth: 85.0,
-                        minHeight: 65.0),
+                        maxHeight: 50.0,
+                        maxWidth: 65.0,
+                        minWidth: 65.0,
+                        minHeight: 50.0),
                     child: Icon(
                       Icons.add,
                       color: Colors.white,
@@ -42,12 +42,16 @@ class NewNote extends StatelessWidget {
                   ),
                 ),
               ),
+
               Text(
                 "Quick Checklist",
                 style: TextStyle(
-                  fontSize: 28.0,
+                  fontSize: 24.0,
                 ),
-              )
+              ),
+            
+              
+
             ],
           ),
 

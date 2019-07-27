@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:Arlo/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 import 'pages/homescreen.dart';
 import 'package:flutter/services.dart';
@@ -37,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigationPage() {
-    Navigator.pushReplacement(context, FadeRouteBuilder(page: HomeScreen()));
+    Navigator.pushReplacement(context, FadeRouteBuilder(page: IntroPage()));
   }
 
   @override
