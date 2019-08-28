@@ -49,13 +49,24 @@ class NewNote extends StatelessWidget {
                   fontSize: 24.0,
                 ),
               ),
-            
-              
 
             ],
           ),
 
           //write a checklist
+          
+          // Padding(
+          //   padding: EdgeInsets.only(left: 3.0, right: 3.0),
+          //   child: Column(
+            Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text("yeet"),
+              //need to make this an auto populating list view with button 
+            ],
+          ),
+          // ),
+         
 
         ],
       ),
