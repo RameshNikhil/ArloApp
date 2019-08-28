@@ -1,15 +1,17 @@
 # arlo_app
 
-## 10 hour builds? 
+## Written in Flutter  
+
+#### 10 hour builds? 
 This project came about namely as a way of me trying to build a full application with both front end and backend in less than 10 hours. I will continue to try this, but IRL its a nightmare. 
 
-## Background 
+#### Background 
 Arlo is a simple gratitude tracker which at haze of the moment had seemed like a great idea + might have been possible to build in 10 hours. I still think if people restrospect on their day and think about the positives they will realise that we generally have life good. 
 
-## What now 
+#### What now 
 Ummm...feel free to fork the repo and maybe try to build out more of the functionality. Its also a good intro to flutter if you're interested
 
-### The idealistic monologue I recorded at 4am on my iPhone after speaking to a friend about "depression"
+#### The idealistic monologue I recorded at 4am on my iPhone after speaking to a friend about "depression"
 Everyone has stress in their day to day lives and it can pile up and get in the way of you accomplishing tasks. I read somewhere, a long time ago, that spending a few minutes a day just reflecting on what you’ve done can be a cathartic experience that helps clear your mind and prepares you to move onto the tasks that need to be done for that day. In fact, that’s why people write journals and meditate. It’s a personal way you can express yourself and therapeutic where it helps you get your day in order.
 
 This is in many ways true and it is why I am writing this myself. This for me is a way I can just spew out any of my thoughts about Arlo with self critiquing helping me better understand my goals. 
