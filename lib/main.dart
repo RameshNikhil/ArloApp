@@ -76,18 +76,5 @@ class _SplashScreenState extends State<SplashScreen> {
         ],
       ),
     ));
-
-
-    // return new Container(
-    //   alignment: Alignment.bottomLeft,
-    //   padding: EdgeInsets.only(bottom: 40.0, left: 30.0),
-    //   color: Color(0xffE3E3E5),
-    //   child: new Image.asset(
-    //     'lib/assets/images/logoFull.png',
-    //     height: 150,
-    //   ),
-    // );
-
-
   }
 }
