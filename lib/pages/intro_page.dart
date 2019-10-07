@@ -15,7 +15,6 @@ class IntroPage extends StatelessWidget {
     TextEditingController emailController = new TextEditingController();
     TextEditingController passwordController = new TextEditingController();
 
-
     return PageView(
       controller: _controller,
       scrollDirection: Axis.vertical,
@@ -135,12 +134,10 @@ class IntroPage extends StatelessWidget {
                       padding: const EdgeInsets.fromLTRB(0.0, 16.0, 0.0, 0.0),
                       child: TextField(
                         decoration: InputDecoration(
-                            border: InputBorder.none, 
-                            hintText: 'Name',
-                            ),
-                          style: TextStyle(
-                            fontSize: 20.0
-                          ),
+                          border: InputBorder.none,
+                          hintText: 'Name',
+                        ),
+                        style: TextStyle(fontSize: 20.0),
                         controller: nameController,
                       ),
                     ),
@@ -152,9 +149,7 @@ class IntroPage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'Email'),
-                             style: TextStyle(
-                            fontSize: 20.0
-                          ),
+                        style: TextStyle(fontSize: 20.0),
                         controller: emailController,
                       ),
                     ),
@@ -166,9 +161,7 @@ class IntroPage extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'Password'),
-                             style: TextStyle(
-                            fontSize: 20.0
-                          ),
+                        style: TextStyle(fontSize: 20.0),
                         controller: passwordController,
                       ),
                     ),
@@ -181,8 +174,71 @@ class IntroPage extends StatelessWidget {
           backgroundColor: Colors.white,
           floatingActionButton: FloatingActionButton(
             onPressed: () {
-              Navigator.pushReplacement(
-                  context, FadeRouteBuilder(page: HomeScreen()));
+              if (nameController.text.isEmpty) {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    // return object of type Dialog
+                    return AlertDialog(
+                      title: new Text("Missing Name"),
+                      content: new Text("Please add name before continuing"),
+                      actions: <Widget>[
+                        // usually buttons at the bottom of the dialog
+                        new FlatButton(
+                          child: new Text("Close"),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                        ),
+                      ],
+                    );
+                  },
+                );
+              } else if (emailController.text.isEmpty) {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    // return object of type Dialog
+                    return AlertDialog(
+                      title: new Text("Missing Email"),
+                      content: new Text("Please add email before contiuing"),
+                      actions: <Widget>[
+                        // usually buttons at the bottom of the dialog
+                        new FlatButton(
+                          child: new Text("Close"),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                        ),
+                      ],
+                    );
+                  },
+                );
+              } else if (passwordController.text.isEmpty) {
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    // return object of type Dialog
+                    return AlertDialog(
+                      title: new Text("Missing Password "),
+                      content:
+                          new Text("Please add password before continuing"),
+                      actions: <Widget>[
+                        // usually buttons at the bottom of the dialog
+                        new FlatButton(
+                          child: new Text("Close"),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                        ),
+                      ],
+                    );
+                  },
+                );
+              } else {
+                Navigator.pushReplacement(
+                    context, FadeRouteBuilder(page: HomeScreen(userName: nameController.text)));
+              }
             },
             child: ShowUp(
               child: Icon(Icons.keyboard_arrow_down),

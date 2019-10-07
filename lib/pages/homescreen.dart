@@ -3,6 +3,9 @@ import 'package:Arlo/componenets/function_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  String userName; 
+  HomeScreen({@required this.userName}); //don't know if required is "required" since validation is present on the previous page
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                       fontSize: 31.0,
                       color: Colors.black,
                     )),
-                Text("Nikhil Ramesh",
+                Text(userName,  // ! why no widget.username? 
                     style: TextStyle(
                         fontSize: 32.0,
                         //fontFamily: "Montserrat",

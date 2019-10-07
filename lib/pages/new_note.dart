@@ -42,32 +42,40 @@ class NewNote extends StatelessWidget {
                   ),
                 ),
               ),
-
               Text(
                 "Quick Checklist",
                 style: TextStyle(
                   fontSize: 24.0,
                 ),
               ),
-
             ],
           ),
 
           //write a checklist
-          
-          // Padding(
-          //   padding: EdgeInsets.only(left: 3.0, right: 3.0),
-          //   child: Column(
-            Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text("yeet"),
-              //need to make this an auto populating list view with button 
-            ],
-          ),
-          // ),
-         
 
+          Container(
+            child: Padding(
+              child: Row(
+              children: <Widget>[
+                Text("this is a note"), //TAG
+              ],
+            ),
+            padding: EdgeInsets.fromLTRB(32.0, 16.0, 32.0, 16.0),
+            )
+          ),
+          Center(
+            child: GestureDetector(
+            child: Card(
+              child: Text("+"),
+              color: Colors.red.withOpacity(0.6),  
+            ),
+            onTap: (){
+              //create new text in the "TAG" above
+            },
+          )
+          ),
+          
+          
         ],
       ),
     );
