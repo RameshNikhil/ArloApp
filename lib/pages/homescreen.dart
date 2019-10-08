@@ -3,7 +3,7 @@ import 'package:Arlo/componenets/function_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  String userName; 
+  final String userName; 
   HomeScreen({@required this.userName}); //don't know if required is "required" since validation is present on the previous page
 
   @override

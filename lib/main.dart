@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:Arlo/pages/intro_page.dart';
 import 'package:flutter/material.dart';
-import 'pages/homescreen.dart';
+// import 'pages/homescreen.dart';
 import 'package:flutter/services.dart';
 import 'routing/fade_transition.dart';
 
@@ -19,9 +19,9 @@ void main() {
       ),
     ),
     home: new SplashScreen(),
-    routes: <String, WidgetBuilder>{
-      '/HomeScreen': (BuildContext context) => new HomeScreen()
-    },
+    // routes: <String, WidgetBuilder>{
+    //   '/HomeScreen': (BuildContext context) => new HomeScreen()
+    // },
   ));
 }
 

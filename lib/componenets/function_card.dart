@@ -51,11 +51,12 @@ class FunctionCard extends StatelessWidget {
 }
 
 class SingleFunction extends StatelessWidget {
-  var iconCase;
-  var title;
-  var detail;
-  var pageTag; 
-  var page;
+  //var changed to final 
+  final iconCase;
+  final title;
+  final detail;
+  final pageTag; 
+  final page;
 
   SingleFunction(
       {@required this.iconCase, @required this.title, @required this.detail, @required this.pageTag, @required this.page});
@@ -137,9 +138,10 @@ class SingleFunction extends StatelessWidget {
 
 
 class SingleFunctionX extends StatelessWidget {
-  var title;
-  var detail; 
-  var cellDate;
+  //var changed to final 
+  final title;
+  final detail; 
+  final cellDate;
 
   SingleFunctionX(
       {@required this.title, @required this.detail, @required this.cellDate});

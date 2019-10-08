@@ -2,7 +2,7 @@ import 'package:Arlo/pages/new_note.dart';
 import 'package:Arlo/pages/profile.dart';
 import 'package:Arlo/routing/fade_transition.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 
 class BigButtons extends StatelessWidget {
 
