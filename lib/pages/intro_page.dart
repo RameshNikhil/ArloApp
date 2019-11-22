@@ -48,7 +48,8 @@ class IntroPage extends StatelessWidget {
                         child:
                             Text("Welcome to Arlo, a simple gratitude tracker.",
                                 style: TextStyle(
-                                  fontSize: 32.0,
+                                  height: 1.5,
+                                  fontSize: 28.0,
                                   //fontFamily: "Montserrat",
                                   color: Colors.black,
                                 )),
@@ -61,7 +62,8 @@ class IntroPage extends StatelessWidget {
                         child: Text(
                             "Spend a few minutes everyday to reflect on the good that we encountered today.",
                             style: TextStyle(
-                              fontSize: 32.0,
+                              height: 1.5,
+                              fontSize: 28.0,
                               //fontFamily: "Montserrat",
                               color: Colors.black,
                             )),
@@ -74,7 +76,8 @@ class IntroPage extends StatelessWidget {
                         child: Text(
                             "Life can be hard sometimes, but it's important to remember the positives too.",
                             style: TextStyle(
-                              fontSize: 32.0,
+                              height: 1.5,
+                              fontSize: 28.0,
                               //fontFamily: "Montserrat",
                               color: Colors.black,
                             )),
@@ -121,6 +124,7 @@ class IntroPage extends StatelessWidget {
                       child: Text(
                         "Let's start with a few details",
                         style: TextStyle(
+                          height: 1.5,
                           fontSize: 30.0,
                           color: Colors.black,
                         ),
@@ -158,6 +162,7 @@ class IntroPage extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
                       child: TextField(
+                        obscureText: true,
                         decoration: InputDecoration(
                             border: InputBorder.none, hintText: 'Password'),
                         style: TextStyle(fontSize: 20.0),
@@ -173,12 +178,17 @@ class IntroPage extends StatelessWidget {
           backgroundColor: Colors.white,
           floatingActionButton: FloatingActionButton(
             onPressed: () {
+              //TODO : This should really be a reusable component
+
               if (nameController.text.isEmpty) {
                 showDialog(
                   context: context,
                   builder: (BuildContext context) {
                     // return object of type Dialog
                     return AlertDialog(
+                      shape: RoundedRectangleBorder(
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(15.0))),
                       title: new Text("Missing Name"),
                       content: new Text("Please add name before continuing"),
                       actions: <Widget>[
@@ -199,8 +209,11 @@ class IntroPage extends StatelessWidget {
                   builder: (BuildContext context) {
                     // return object of type Dialog
                     return AlertDialog(
+                      shape: RoundedRectangleBorder(
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(15.0))),
                       title: new Text("Missing Email"),
-                      content: new Text("Please add email before contiuing"),
+                      content: new Text("Please add email before continuing"),
                       actions: <Widget>[
                         // usually buttons at the bottom of the dialog
                         new FlatButton(
@@ -219,6 +232,9 @@ class IntroPage extends StatelessWidget {
                   builder: (BuildContext context) {
                     // return object of type Dialog
                     return AlertDialog(
+                      shape: RoundedRectangleBorder(
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(15.0))),
                       title: new Text("Missing Password "),
                       content:
                           new Text("Please add password before continuing"),
