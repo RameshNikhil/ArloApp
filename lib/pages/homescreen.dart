@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   final String userName; 
-  HomeScreen({@required this.userName}); //don't know if required is "required" since validation is present on the previous page
+  HomeScreen({@required this.userName}); 
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +17,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            // Adds a blur user profile button on the top right of the page 
             // IconButton(
             //     icon: Icon(
             //       Icons.blur_on,
@@ -24,7 +25,7 @@ class HomeScreen extends StatelessWidget {
             //       size: 30.0,
             //     ),
             //     onPressed: () {}),
-            // Your widgets here
+          
           ],
         ),
       ),
