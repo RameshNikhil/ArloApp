@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                       fontSize: 31.0,
                       color: Colors.black,
                     )),
-                Text(userName,  // ! why no widget.username? 
+                Text(userName,  // ? why not widget.username? 
                     style: TextStyle(
                         fontSize: 32.0,
                         //fontFamily: "Montserrat",

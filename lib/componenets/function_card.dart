@@ -18,7 +18,7 @@ class FunctionCard extends StatelessWidget {
           padding: EdgeInsets.only(top: 25.0),
           child: SingleFunctionX(
             title: "Today",
-            detail: "What are you grateful for today?",
+            detail: "What are you grateful for?",
             cellDate: formattedDate,
           ),
         ),
